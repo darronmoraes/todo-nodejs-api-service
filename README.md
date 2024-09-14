@@ -10,6 +10,24 @@ Use the package manager [npm](https://pip.pypa.io/en/stable/) to install todo pa
 npm install
 ```
 
+## Database Connection Setup
+
+install dotenv packge using npm, if not found in package.json withing dependencies
+
+create new file '.env', here we will store all our credentials and other confidential resources that don't require to be published out to developers and is user specific.
+
+For now will add database configurations, for this project we are using postgres, you can change to your desired database
+
+DB_USER='root'
+
+DB_PASSWORD='root'
+
+DB_HOST='localhost'
+
+DB_PORT='3030'
+
+DB_NAME='todos'
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
