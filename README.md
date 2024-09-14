@@ -28,6 +28,16 @@ DB_PORT='3030'
 
 DB_NAME='todos'
 
+## Run Service
+
+```bash
+node --watch server.js
+```
+
+```bash
+node server.js
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
