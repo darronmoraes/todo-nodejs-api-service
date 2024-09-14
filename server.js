@@ -1,6 +1,12 @@
 const express = require('express');
 const app = express();
 
+// include route files
+const usersRoute = require('./routes/users')
+
+// use routes
+app.use('/users', usersRoute)
+
 // Define a route in express
 app.get('/home', (req, res) => {
     res.send('<h1>Hello World, Node.js and Express Server!</h1>')
