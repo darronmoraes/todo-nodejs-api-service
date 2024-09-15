@@ -3,9 +3,11 @@ const app = express();
 
 // include route files
 const usersRoute = require('./routes/users')
+const todosRoute = require('./routes/todos')
 
 // use routes
 app.use('/users', usersRoute)
+app.use('/todos', todosRoute)
 
 // Define a route in express
 app.get('/home', (req, res) => {
